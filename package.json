@@ -1,0 +1,16 @@
+{
+  "name": "daily-picks-collector",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "check": "wrangler deploy --dry-run",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "@cloudflare/puppeteer": "1.4.0"
+  },
+  "devDependencies": {
+    "wrangler": "4.156.1"
+  }
+}

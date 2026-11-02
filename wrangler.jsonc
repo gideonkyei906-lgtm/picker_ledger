@@ -1,0 +1,13 @@
+{
+  "name": "picker-ledger",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "browser": {"binding": "BROWSER"},
+  "durable_objects": {"bindings": [{"name":"CAPTURE","class_name":"DailyCapture"}]},
+  "migrations": [{"tag":"v1","new_sqlite_classes":["DailyCapture"]}],
+  "triggers": {"crons":["55 5 * * *"]},
+  "vars": {"SITE_URL":"https://daily-picks-ledger.gideonkyei906.chatgpt.site"},
+  "observability": {"enabled":true}
+}
